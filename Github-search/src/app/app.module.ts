@@ -6,14 +6,16 @@ import { AppComponent } from './app.component';
 import{HttpClientModule} from '@angular/common/http';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
-import { DatePipe } from './date.pipe'
+import { DatePipe } from './date.pipe';
+import { RepoDirective } from './repo.directive'
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
     ProfilePageComponent,
-    DatePipe
+    DatePipe,
+    RepoDirective
   ],
   imports: [
     BrowserModule,
