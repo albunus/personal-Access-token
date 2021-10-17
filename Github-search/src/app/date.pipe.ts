@@ -5,8 +5,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class DatePipe implements PipeTransform {
 
-  transform(value: unknown, ...args: unknown[]): unknown {
-    return null;
+  transform(value: any): Date {
+    var DatePipe = new Date(value.match(/\d+/)[0] * 1);
+    return DatePipe;
   }
-
 }
