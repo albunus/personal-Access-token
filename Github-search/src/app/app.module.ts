@@ -8,6 +8,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { DatePipe } from './date.pipe';
 import { RepoDirective } from './repo.directive'
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,10 @@ import { RepoDirective } from './repo.directive'
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     HttpClientModule
+
+
 
   ],
   providers: [],

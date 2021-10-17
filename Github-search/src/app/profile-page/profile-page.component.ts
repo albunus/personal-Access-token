@@ -7,8 +7,8 @@ import { UserService } from '../service/user/user.service';
 })
 export class ProfilePageComponent implements OnInit {
 
-  profile: any;
-  repos: any;
+  profile!: any;
+  repos!: any;
   username!: string;
 
   constructor(private userService:UserService) {
