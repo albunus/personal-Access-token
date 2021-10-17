@@ -3,9 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  // AccessUrl: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
 };
 
+
+// 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
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
