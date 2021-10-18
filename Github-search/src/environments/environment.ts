@@ -2,9 +2,11 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+import { access } from "fs";
+
 export const environment = {
   production: false,
-  // AccessUrl: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
+  gitAccessTokenUrl:"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"
 };
 
 

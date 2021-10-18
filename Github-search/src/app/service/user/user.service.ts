@@ -12,7 +12,7 @@ export class UserService {
 
   constructor(private http: HttpClient) {
     console.log("service is now ready!");
-    this.username = "saltbush";
+    this.username = " ";
   }
   getprofileInfo() {
     return this.http.get(
