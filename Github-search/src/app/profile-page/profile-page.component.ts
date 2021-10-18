@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../service/user/user.service';
 @Component({
@@ -11,7 +12,7 @@ export class ProfilePageComponent implements OnInit {
   repos: any;
   username!: string;
 
-  constructor(private userService:UserService) {
+  constructor(private userService:UserService,private httpClient:HttpClient) {
 
     this.userService.updateProfile(this.username);
     this.userService.getprofileInfo().subscribe(Profile => {
